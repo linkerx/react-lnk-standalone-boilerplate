@@ -1,2 +1,2 @@
-# portal-ciudadano-rn
+# Boilerplate ReactJS
 Boilerplate react-linkerx
