@@ -1,0 +1,155 @@
+#cargando-top {
+  position:absolute;
+  z-index:30;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background-color: #fff
+}
+
+#cargando-top.opened {
+  height: 100%;
+  opacity: 1;
+}
+
+#cargando-top.closed {
+  -webkit-animation: fadeOut 0.5s;
+  animation: fadeOut 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+#cargando-top .logo {
+  position: relative;
+  width: 25%;
+  height: auto;
+  top: 40vh;
+  margin:auto;
+}
+
+#cargando-top.closed .logo {
+  -webkit-animation: hideAll 0.5s;
+  animation: hideAll 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+#cargando-top .logo img {
+  width:100%;
+  height:100%;
+}
+
+#cargando-top .texto-tapa {
+  position: absolute;
+  top: 30vh;
+  height: 40vh;
+  right: 0;
+  width: 100%;
+  z-index:32;
+  background-color: #fff;
+
+
+  -webkit-animation: words 3s linear forwards;
+  -moz-animation: words 3s linear forwards;
+  -ms-animation: words 3s linear forwards;
+  -o-animation: words 3s linear forwards;
+  animation: words 3s linear forwards;
+}
+
+@-moz-keyframes words {
+    from { width:100%; }
+    to { width:0; }
+}
+@-webkit-keyframes words {
+  from { width:100%; }
+  to { width:0; }
+}
+@keyframes words {
+  from { width:100%; }
+  to { width:0; }
+}
+
+@-moz-keyframes fadeOut {
+    0% {
+      opacity: 1;
+      height:100%;
+    }
+    99% {
+      height: 100%;
+    }
+    100%
+    {
+      opacity: 0;
+      height:0;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+      opacity: 1;
+      height:100%;
+    }
+    99% {
+      height: 100%;
+    }
+    100%
+    {
+      opacity: 0;
+      height:0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+      height:100%;
+    }
+    99% {
+      height: 100%;
+    }
+    100%
+    {
+      opacity: 0;
+      height:0;
+    }
+}
+
+@-moz-keyframes hideAll {
+    0% {
+      height:auto;
+    }
+    99% {
+      height: auto;
+    }
+    100%
+    {
+      height:0;
+    }
+}
+
+@-webkit-keyframes hideAll {
+    0% {
+      height:auto;
+    }
+    99% {
+      height: auto;
+    }
+    100%
+    {
+      height:0;
+    }
+}
+
+@keyframes hideAll {
+    0% {
+      height:auto;
+    }
+    99% {
+      height:auto;
+    }
+    100%
+    {
+      height:0;
+    }
+}

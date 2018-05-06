@@ -1,0 +1,84 @@
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 50px;
+  background-color: #fff; //#1a8ba4;
+  box-shadow: 0px 0px 5px 0px #22535f;
+  z-index:20;
+}
+
+header.bar {
+  width: 100%;
+}
+
+header.hidden {
+  width: 0%;
+}
+
+header.tohidden {
+  width: 0%;
+  animation: toTheHidden 0.5s linear forwards;
+  -webkit-animation: toTheHidden 0.5s linear forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+header.tobar {
+  width: 100%;
+  -webkit-animation: toTheBar 0.5s linear forwards;
+  animation: toTheBar 0.5s linear forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes toTheBar {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width:100%;
+    }
+}
+
+@-webkit-keyframes toTheBar {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 100%;
+    }
+}
+
+@keyframes toTheHidden {
+    0% {
+      width:100%;
+    }
+    100% {
+      width: 0%;
+    }
+}
+@-webkit-keyframes toTheHidden {
+    0% {
+      width:100%;
+    }
+    100% {
+      width: 0%;
+    }
+}
+
+.header-megamenu.opened {
+  position:absolute;
+  top:9vh;
+  left:10%;
+  width:80%;
+  height:32vh;
+  z-index:8;
+}
+
+.header-megamenu.closed {
+  -webkit-animation: fadeOut 1s;
+  animation: fadeOut 1s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}

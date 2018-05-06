@@ -1,0 +1,82 @@
+@import (reference) "default.less";
+
+header .menu-principal-header {
+  position: absolute;
+  top: 6px;
+  left: 10%;
+  width: 80%;
+  height: 6vh;
+  z-index: 10;
+
+  @media @narrow, @super-narrow {
+    left: 15%;
+    width: 70%;
+  }
+}
+
+header .menu-principal-header ul {
+  display: table;
+  table-layout: fixed;
+  width:100%;
+  height:100%;
+}
+
+header .menu-principal-header ul li {
+  display: table-cell;
+  position:relative;
+  height:100%;
+}
+
+header .menu-principal-header ul li a {
+  position:absolute;
+  display:flex;
+  width:100%;
+  height:100%;
+}
+
+header .menu-principal-header ul li span {
+  position: absolute;
+  display: block;
+  top: 12px;
+  left: 37%;
+  width: 70%;
+  color: #333;
+  font-size: 1em;
+  @media @narrow, @super-narrow {
+    display:none;
+  }
+}
+
+header .menu-principal-header ul li .image_container {
+  position: absolute;
+  width: 35%;
+  top: 2px;
+  text-align: right;
+  @media @narrow, @super-narrow {
+    left:25%;
+  }
+}
+
+header .menu-principal-header ul li img {
+  height: 36px;
+  width:auto;
+}
+
+header.hidden .menu-principal-header,
+header.tohidden .menu-principal-header {
+  display:none;
+}
+
+header .menu-principal-header ul li .image_container.thumb {
+  z-index: 30;
+  -webkit-transition: opacity 0.5s, background-color 1s;
+  transition: opacity 0.5s, background-color 1s;
+}
+
+header .menu-principal-header ul li .image_container.thumb_hover {
+  z-index: 29;
+}
+
+header .menu-principal-header ul li:hover .image_container.thumb {
+  opacity:0;
+}

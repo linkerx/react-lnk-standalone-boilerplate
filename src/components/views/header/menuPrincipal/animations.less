@@ -1,0 +1,73 @@
+header.bar .menu-principal-header{
+  opacity:1;
+}
+
+header.tobar .menu-principal-header {
+  opacity:1;
+
+  -webkit-animation: toTheBarMenu 0.5s linear forwards;
+  animation: toTheBarMenu 0.5s linear forwards;
+
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+header.hidden .menu-principal-header{
+  opacity:0;
+}
+
+header.tohidden .menu-principal-header {
+  opacity:0;
+
+  -webkit-animation: toTheHiddenMenu 0.5s linear forwards;
+  animation: toTheHiddenMenu 0.5s linear forwards;
+
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes toTheBarMenu {
+    0% {
+      opacity:0;
+    }
+    50%{
+      opacity:0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+@-webkit-keyframes toTheBarMenu {
+    0% {
+      opacity:0;
+    }
+    50%{
+      opacity:0;
+    }
+    100% {
+      opacity: 1;
+    }
+}
+
+@keyframes toTheHiddenMenu {
+    0% {
+      opacity:1;
+    }
+    50%{
+      opacity:0;
+    }
+    100% {
+      opacity:0;
+    }
+}
+@-webkit-keyframes toTheHiddenMenu {
+    0% {
+      opacity:1;
+    }
+    50%{
+      opacity:0;
+    }
+    100% {
+      opacity: 0;
+    }
+}
